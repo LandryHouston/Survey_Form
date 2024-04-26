@@ -19,7 +19,7 @@ def main():
     verify = input("Is this correct? (yes/no) ").lower().strip()
     if verify == "yes":
         print("Submitting...")
-        with open("python/survey/survey_output.csv", "a", newline="") as csvfile:
+        with open("survey_output.csv", "a", newline="") as csvfile:
             csvwriter = csv.writer(csvfile)
             csvwriter.writerow(info)
     else:
